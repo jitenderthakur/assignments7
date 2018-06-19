@@ -1,0 +1,129 @@
+QUES1: Reverse a String
+ANS1:
+
+package acadview;
+
+class Reversestr 
+    {
+     public static void main(String []args)
+     {
+        String first="tripy";
+        StringBuilder second = new StringBuilder();
+        for(int i=first.length()-1;i>=0;i--)
+        {
+            second=second.append(first.charAt(i));
+            
+        }
+           System.out.println(second);
+     }
+    
+} 
+
+ques2: Generate all substrings of the string "xyz"
+ANS:
+
+package acadview;
+
+ class Allsbstr 
+    
+
+
+{
+     public static void main(String args[])
+     {
+         String A="xyz";
+       for (int i = 0; i < A.length(); i++)
+       {
+        for (int j = i+1; j <= A.length(); j++) 
+        {
+            System.out.println(A.substring(i,j));
+        }
+    }  
+     }
+ }
+    
+QUES3: Remove all vowels from the String
+ANS3:
+
+
+package acadview;
+
+class Vowels
+{
+     public static void main(String args[])
+     {
+         
+         String str1="hey you why are you staring ";
+         String str2= str1.replaceAll("[AEIOUaeiou]","");
+         System.out.println(str2);
+     }
+}
+
+
+
+QUES4:   Print the following pattern 
+ANS4:
+package acadview;
+ class pattern 
+ {
+    public static void main(String args[])
+    {
+        char ch=97;
+        for(int i=0;i<3;i++)
+        {
+            ch=97;
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println("");
+        }
+        
+    }
+    
+}   
+
+QUES5: Occurrence of a string 
+ANS5:
+
+package acadview;
+
+class Occurance
+{
+    
+    public static void main(String args[])
+    {
+        String str1="tripy";
+        String str2="abcde";
+        if(str1.contains(str2)||str2.contains(str1))
+        {
+            System.out.print("contain");
+        }
+        else
+        {
+            System.out.print("not contain");
+        }
+    }
+}
+
+QUES6: Count the number of words
+ANS:
+
+
+package acadview;
+
+class Countwords 
+{
+    public static void main(String []args)
+    {
+        String str="hello tripy";
+        String words[] = str.trim().split(" ");
+        System.out.print(words.length + str);
+    }
+
+            }
+
+
+
+
